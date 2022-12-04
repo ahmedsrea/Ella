@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+/* Start Buttons Style */
+.svg:hover {
+  color: white;
+  border-color: #FF4719;
+}
+.svg::before {
+  position: absolute;
+  content: "";
+  background: #FF4719;
+  inset: 0;
+  top: 100%;
+  z-index: -1;
+  transition: top 0.09s ease-in;
+}
+.svg:hover::before {
+  top: 0;
+}
+.sgg:hover {
+  border-color: black;
+  color: black;
+}
+.sgg::before {
+  position: absolute;
+  content: "";
+  background: white;
+  inset: 0;
+  bottom: 100%;
+  z-index: -1;
+  transition: bottom 0.09s ease-in;
+}
+.sgg:hover::before {
+  bottom: 0;
+}
+/* End Buttons Style */
+/* Start Menu List Sytel */
+.main-list:hover:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: #FF4719;
+  bottom: -5px;
+  left: 50%;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  animation-name: example;
+  animation-duration: 2s;
+}
+.main-list:hover:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: #FF4719;
+  bottom: -5px;
+  right: 50%;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  animation-name: example;
+  animation-duration: 2s;
+}
+@keyframes example {
+  from {width: 0;}
+  to {width: 50%;}
+}
+/* End Menu List Sytel */
+/* Start Side Menu */
+.nav_links {
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: -1px;
+  z-index: 20;
+  height: 100vh;
+  width: 300px;
+  background: #ffffff;
+  transform: translateX(-250px);
+  transition: transform 0.3s;
+}
+.nav-open .nav_links {
+  transform: translateX(0);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.nav_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.nav-open .nav_overlay {
+  visibility: visible;
+  opacity: 0.5;
+}
+/* End Side Menu */
+/* Start Slider */
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 10s slider infinite;
+}
+.slider figure img {
+  width: 20%;
+  float: left;
+}
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+/* End Slider */
+/* Start Sticky Navbar */
+.sticky-nav {
+  position: fixed;
+  width: 100%;
+  background: white;
+  top: 0;
+  border-bottom: 1px solid gray;
+  z-index: 15;
+}
+/* End Sticky Navbar */
+/* Start Fade in */
+.slide {
+  animation: slide 800ms ease-in 300ms both;
+}
+@keyframes slide {
+  from {
+    /* transform: translateX(300px); */
+    opacity: 0;
+  }
+
+  to {
+    /* transform: translateX(0); */
+    opacity: 1;
+  }
+}
+/* End Fade in */
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* Start Scrollbar Edit */
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #f7f4ed;
+  height: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: rgb(172, 172, 172);
+  border-radius: 100vh;
+}

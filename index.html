@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ella</title>
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a55c835832.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body onscroll="myfunction()">
+  <!-- Start First Section -->
+  <section class="md:pt-[40px] pt-[20px] h-[100vh]">
+    <div class="lg:flex hidden w-[800px] h-[700px] z-[-2] bg-center absolute top-[-20%] left-[15%] origin-bottom -rotate-12" style="background-image: url('./assets/parallax-rectangle.png');"></div>
+
+    <!-- Start Nav bar -->
+
+    <div id="navbar" class="transition-all duration-200 delay-100">
+      <nav class="lg:max-w-[1400px] z-[10] w-full mx-auto flex flex-row justify-between items-start py-[10px] px-4">
+        <div class="flex flex-row items-center">
+
+          <!-- Start Left Menu -->
+          <div class="nav hidden">
+            <div class="nav_links">
+              <ul class="flex flex-col items-start gap-5 text-base text-gray-600 pt-14 pl-10 transition-all duration-200">
+                <li class="main-list relative transition duration-300 delay-150 hover:text-orange-500 uppercase font-semibold"><a href="">home</a></li>
+                <li class="main-list relative transition duration-300 delay-150 hover:text-orange-500  uppercase font-semibold"><a href="">shopify themes</a></li>
+                <li class="main-list relative transition duration-300 delay-150 hover:text-orange-500  uppercase font-semibold"><a href="">shopify modules</a></li>
+                <li class="main-list relative transition duration-300 delay-150 hover:text-orange-500  uppercase font-semibold"><a href="">services</a></li>
+                <li class="main-list relative transition duration-300 delay-150 hover:text-orange-500  uppercase font-semibold"><a href="">showcase</a></li>
+                <li class="main-list relative transition duration-300 delay-150 hover:text-orange-500  uppercase font-semibold"><a href="">blog</a></li>
+                <li class="main-list relative transition duration-300 delay-150 hover:text-orange-500  uppercase font-semibold"><a href="">support</a></li>
+                <li class="main-list relative transition duration-300 delay-150 hover:text-orange-500  uppercase font-semibold"><a href="">demo</a></li>
+              </ul>
+            </div>
+            <div class="nav_overlay"></div>
+          </div>
+          <!-- End Left Menu -->
+
+          <div class="cursor-pointer transition duration-200" id="btnNav">
+            <i class="fa-solid fa-bars text-[30px] mr-10"></i>
+          </div>
+          <a href="" class="mr-10"><img src="assets/ella-logo-retina.png" alt="logo"></a>
+
+          <!-- Main menu -->
+          <ul class="lg:flex flex-row hidden gap-10 text-base text-gray-600">
+            <li class="main-list relative transition duration-300 delay-150 hover:text-orange-500"><a href="">Home</a></li>
+            <li class="main-list relative transition duration-300 delay-150 hover:text-orange-500"><a href="">Page Layouts</a></li>
+            <li class="main-list relative transition duration-300 delay-150 hover:text-orange-500"><a href="">Features</a></li>
+            <li class="main-list relative transition duration-300 delay-150 hover:text-orange-500"><a href="">Performance</a></li>
+          </ul>
+        </div>
+
+        <!-- Start Right Buttons -->
+        <div class="md:flex hidden">
+          <button class="svg mr-10 py-2 px-4 border-2 border-black rounded-lg font-bold relative z-[1]">Change Logs</button>
+          <button class="sgg py-2 px-2 border-2 border-orange-600 rounded-lg font-bold bg-orange-600 text-white relative z-[1] overflow-hidden">Buy Ella - 50% OFF</button>
+        </div>
+        <!-- End Right Button -->
+
+
+      </nav>
+    </div>
+
+    <!-- End Nav bar -->
+    <!-- Start Intro Section -->
+    <div class="grid lg:grid-cols-2 grid-cols-1 lg:max-w-[1300px] mx-auto  lg:px-0 px-6 mt-[30px] box">
+      <!-- Start First Part -->
+      <div class="lg:flex hidden flex-col mt-[100px] ml-[50px]">
+        <h1 class="text-[50px] text-black font-bold mb-3 leading-snug">Creative <span class="block">multi-purpose</span> <span class="text-[#ff4719]">Shopify</span> theme</h1>
+        <p class="max-w-[80%] text-gray-500 mb-10 text-[18px]">
+          An All-in-one template for your Shopify store to create different structures and satisfy any specific requirements.Buy Ella - 50% OFF 
+        </p>
+        <div class="flex items-start justify-start">
+          <button class="sgg mr-10 py-2 px-2 border-2 border-orange-600 rounded-lg font-bold bg-orange-600 text-white relative z-[1] overflow-hidden">Buy Ella - 50% OFF</button>
+          <div>
+            <button class="svg mb-3 py-2 px-4 border-2 border-black rounded-lg font-bold relative z-[1]">Open A Free Store</button>
+            <div class="text-[12px] text-center ">
+              <span class="block"><span class="font-bold">3 months</span> of Shopify for</span><span class="block"> <span class="font-bold">$1/month</span> on select plans</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End First Part -->
+
+      <!-- Start Second Part SlideShow -->
+      <div class="lg:max-w-[50%] max-w-[80%] md:p-5 p-2 bg-[#F9F8F6] mx-auto shadow-lg rounded-md lg:absolute relative lg:right-0 border border-gray-100">
+        <div class="flex gap-1 md:mb-5 mb-2">
+          <div class="w-[8px] h-[8px] bg-gray-600 rounded-full"></div>
+          <div class="w-[8px] h-[8px] bg-gray-600 rounded-full"></div>
+          <div class="w-[8px] h-[8px] bg-gray-600 rounded-full"></div>
+        </div>
+        <div class="p-1 bg-[#F9F8F6] border overflow-hidden border-gray-100 shadow-lg rounded-3xl absolute lg:left-[-80px] left-[-50px] lg:bottom-[-20px] bottom-[-10px] z-10">
+          <div class="slider lg:w-[10vw] w-[15vw] overflow-hidden">
+            <figure>
+              <img src="assets/banner-mobile-illustration-1.jpg" alt="banner">
+              <img src="assets/ELECTRONIC_MOBILE.png" alt="banner">
+              <img src="assets/FASHION2_MOBILE.png" alt="banner">
+              <img src="assets/PET_MOBILE.png" alt="banner">
+            </figure>
+          </div>
+        </div>
+        <div class="">
+          <div class="slider w-full overflow-hidden relative">
+            <figure>
+              <img src="assets/banner-desktop-illustration.jpg" alt="banner">
+              <img src="assets/ELECTRONIC.png" alt="banner">
+              <img src="assets/FASHION2.png" alt="banner">
+              <img src="assets/PET.png" alt="banner">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <!-- Start Second Part -->
+
+      <!-- Start First Part -->
+      <div class="lg:hidden flex flex-col items-center text-center mt-[100px] mx-[10%]">
+        <h1 class="text-[20px] text-black font-bold mb-3 leading-snug">Creative multi-purpose <span class="text-[#ff4719]">Shopify</span> theme</h1>
+        <p class="text-gray-500 mb-10 text-[15px]">
+          An All-in-one template for your Shopify store to create different structures and satisfy any specific requirements.Buy Ella - 50% OFF 
+        </p>
+        <div class="flex md:flex-row flex-col md:gap-0 gap-4 items-start justify-start">
+          <button class="sgg mr-10 py-2 px-2 border-2 shadow-md border-[#FF4719] rounded-lg font-bold bg-[#FF4719] text-white relative z-[1] overflow-hidden">Buy Ella - 50% OFF</button>
+          <div>
+            <button class="svg mb-3 py-2 px-4 border-2 border-black rounded-lg font-bold relative z-[1]">Open A Free Store</button>
+            <div class="text-[12px] text-center ">
+              <span class="block"><span class="font-bold">3 months</span> of Shopify for</span><span class="block"> <span class="font-bold">$1/month</span> on select plans</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End First Part -->
+
+    </div>
+    <!-- End Intro Section -->
+
+    <div class="flex z-[-1] absolute lg:top-[-140%] md:top-[-130%] top-[-150%] lg:left-[-80%] md:left-[-130%] left-[-150%]"><img src="assets/parallax-layer-red.png" alt="" class="w-full h-auto object-cover"></div>
+  </section>
+  <!-- End First Section -->
+
+  <!-- Start Feature Section -->
+  <section class="bg-[#FAFAFA] pb-[50px] box">
+    <div class="lg:max-w-[1400px] mx-auto grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7 lg:mt-[200px] sm:mt-[300px] mt-[100px] xl:px-0 px-3">
+      <div class="flex flex-col text-center bg-white shadow-mine rounded-lg p-5 hover:bg-[#ff4719] group transition ease-in-out delay-100 duration-300">
+        <i class="fa-regular fa-heart text-[#ff4719] text-[40px] group-hover:text-white"></i>
+        <h1 class="font-semibold text-2xl mt-8 group-hover:text-white">UI/UX</h1>
+        <p class="mt-8 text-gray-500 group-hover:text-white">Mobile Optimized Design & Incredible Design/UI/UX, keep your store looking fresh and perfect.</p>
+      </div>
+      <div class="flex flex-col text-center bg-white shadow-mine rounded-lg p-10 hover:bg-[#ff4719] group transition ease-in-out delay-100 duration-300">
+        <i class="fa-regular fa-star text-[#ff4719] text-[40px] group-hover:text-white"></i>
+        <h1 class="font-semibold text-2xl mt-8 group-hover:text-white">Stunning Design</h1>
+        <p class="mt-8 text-gray-500 group-hover:text-white">Want to increase your sales just in the first visit. Come to us & you will see how miracle our flagship shopify themes are.</p>
+      </div>
+      <div class="flex flex-col text-center bg-white shadow-mine rounded-lg p-10 hover:bg-[#ff4719] group transition ease-in-out delay-100 duration-300">
+        <i class="fa-solid fa-gear text-[#ff4719] text-[40px] group-hover:text-white"></i>
+        <h1 class="font-semibold text-2xl mt-8 group-hover:text-white">Easy to Use and Implement</h1>
+        <p class="mt-8 text-gray-500 group-hover:text-white">We analyze, then support you the best methods for any necessary processes or features make your website operate stably and smoothly.</p>
+      </div>
+      <div class="flex flex-col text-center bg-white shadow-mine rounded-lg p-10 hover:bg-[#ff4719] group transition ease-in-out delay-100 duration-300">
+        <i class="fa-solid fa-phone text-[#ff4719] text-[40px] group-hover:text-white"></i>
+        <h1 class="font-semibold text-2xl mt-8 group-hover:text-white">Outstanding Support</h1>
+        <p class="mt-8 text-gray-500 group-hover:text-white">Get the best technical support around! If you have questions or problems, just Contact us, we're here to help!</p>
+      </div>
+      <div class="flex flex-col text-center bg-white shadow-mine rounded-lg p-10 hover:bg-[#ff4719] group transition ease-in-out delay-100 duration-300">
+        <i class="fa-solid fa-display text-[#ff4719] text-[40px] group-hover:text-white"></i>
+        <h1 class="font-semibold text-2xl mt-8 group-hover:text-white">Browser Compatibility</h1>
+        <p class="mt-8 text-gray-500 group-hover:text-white">One of our goal is to bring you compatible themes with most of the commonly used browsers which become a business core advantage.</p>
+      </div>
+      <div class="flex flex-col text-center bg-white shadow-mine rounded-lg p-10 hover:bg-[#ff4719] group transition ease-in-out delay-100 duration-300">
+        <i class="fa-solid fa-magnifying-glass text-[#ff4719] text-[40px] group-hover:text-white"></i>
+        <h1 class="font-semibold text-2xl mt-8 group-hover:text-white">Search Engine Optimization</h1>
+        <p class="mt-8 text-gray-500 group-hover:text-white">Combination of SEO and our web development team make a powerful weapon to get super high conversion rate websites.</p>
+      </div>
+    </div>
+  </section>
+  <!-- End Feature Section -->
+
+  <!-- Start The Achievements Section -->
+  <section class="lg:max-w-[1400px] mx-auto flex flex-col text-center mt-[100px] px-4 box mb-[50px]">
+    <div></div>
+    <h1 class="text-[#ff4719] md:text-[50px] text-[30px] font-bold leading-tight">The Achievements We Get</h1>
+    <p class="md:text-[16px] text-[14px] text-gray-500">We always try harder every day to give our customers the best experience.</p>
+
+    <div class="w-[70%] mx-auto flex md:flex-row flex-col md:gap-0 gap-10 justify-between mt-[50px]">
+      <div class="flex flex-row items-center text-start">
+        <div class="md:w-[110px] w-[90px] mr-5 md:h-[110px] h-[90px] p-5 flex justify-center items-center border-2 border-[#ff4719] rounded-full">
+          <i class="fa-regular fa-user text-[#ff4719] md:text-[50px] text-[30px]"></i>
+        </div>
+        <div class="flex flex-col">
+          <h1 class="font-normal md:text-[20px] text-[15px] leading-none text-[#000]">Customers</h1>
+          <span class="font-bold md:text-[50px] text-[30px] leading-tight">33.000+</span>
+        </div>
+      </div>
+      <div class="flex flex-row items-center text-start">
+        <div class="md:w-[110px] w-[90px] mr-5 md:h-[110px] h-[90px] p-5 flex justify-center items-center border-2 border-[#ff4719] rounded-full">
+          <i class="fa-regular fa-star text-[#ff4719] md:text-[50px] text-[30px]"></i>
+        </div>
+        <div class="flex flex-col">
+          <h1 class="font-normal md:text-[20px] text-[15px] leading-none text-[#000]">Reviews</h1>
+          <span class="font-bold md:text-[50px] text-[30px] leading-tight">977+</span>
+        </div>
+      </div>
+    </div>
+    <div class="flex md:flex-row flex-col gap-5 mt-[40px]">
+      <div>
+        <img src="./assets/elite-author.png" alt="elite" class="w-[100%] h-auto object-contain">
+      </div>
+      <div>
+        <img src="./assets/top-theme.png" alt="elite" class="w-[100%] h-auto object-contain">
+      </div>
+    </div>
+  </section>
+  <!-- End The Achievements Section -->
+
+  <!-- Start Home Pages Section -->
+  <div class="bg-[#fafafa] pt-[40px] pb-[40px]">
+    <section class="lg:max-w-[1400px] mx-auto flex flex-col text-center px-4">
+      <h1 class="text-[#ff4719] md:text-[55px] text-[33px] font-semibold leading-tight"><span class="block md:text-[66px] text-[45px] relative">50<span class="absolute top-[-10px] md:text-[50px] text-[35px]">+</span></span>Home Pages</h1>
+      <p class="md:w-[60%] mx-auto mt-[25px] text-center">24+ Available Homepages, more are coming soon. Multiple layouts and styles with<span class="font-bold"> multiple flexible</span> <span class="font-bold">theme sections</span> allow you to create different structures and satisfy any specific requirements. Ella is fully compatible with Shopify OS 2.0, offers the maximum customizability.</p>
+      <div class="flex flex-col mt-10">
+        <ul class="bg-[#f0f0f0] rounded-lg flex flex-row gap-2 whitespace-nowrap justify-between items-center font-semibold overflow-y-hidden scrollbar-hide">
+          <li class="py-2 px-6 bg-white text-[#ff4719] cursor-pointer"><a href="">All</a></li>
+          <li class="py-2 px-6 hover:bg-white hover:rounded-lg cursor-pointer transition duration-300 delay-150"><a href="">Fashion</a></li>
+          <li class="py-2 px-6 hover:bg-white hover:rounded-lg cursor-pointer transition duration-300 delay-150"><a href="">Accessories</a></li>
+          <li class="py-2 px-6 hover:bg-white hover:rounded-lg cursor-pointer transition duration-300 delay-150"><a href="">Health & Beauty</a></li>
+          <li class="py-2 px-6 hover:bg-white hover:rounded-lg cursor-pointer transition duration-300 delay-150"><a href="">Home & Garden</a></li>
+          <li class="py-2 px-6 hover:bg-white hover:rounded-lg cursor-pointer transition duration-300 delay-150"><a href="">Electornics & Supermarket</a></li>
+          <li class="py-2 px-6 hover:bg-white hover:rounded-lg cursor-pointer transition duration-300 delay-150"><a href="">Sports & Recreation</a></li>
+        </ul>
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 mt-10">
+          <div class="flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+            <div class="cursor-pointer group relative flex">
+              <img src="./assets/ella-home-1.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+              <div class="absolute left-0 top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+              <span class="absolute top-2 right-2 bg-[#0067f0] text-white font-normal text-[15px] py-1 px-3 rounded-lg">New</span>
+              <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="flex flex-row px-10 py-7 justify-between items-center">
+              <div class="flex flex-col items-start">
+                <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 1</a>
+                <a href="" class="font-semibold text-2xl mt-3 relative group">
+                  <span>Classic</span>
+                  <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+                </a>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+            <div class="cursor-pointer group relative flex">
+              <img src="./assets/ella-home-2.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+              <div class="absolute top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+              <span class="absolute top-2 right-2 bg-[#0067f0] text-white font-normal text-[15px] py-1 px-3 rounded-lg">New</span>
+              <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="flex flex-row px-10 py-7 justify-between items-center">
+              <div class="flex flex-col items-start">
+                <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 2</a>
+                <a href="" class="font-semibold text-2xl mt-3 relative group">
+                  <span>Trend Style</span>
+                  <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+                </a>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+            <div class="cursor-pointer group relative flex">
+              <img src="./assets/ella-home-3.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+              <div class="absolute top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+              <span class="absolute top-2 right-2 bg-[#0067f0] text-white font-normal text-[15px] py-1 px-3 rounded-lg">New</span>
+              <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="flex flex-row px-10 py-7 justify-between items-center">
+              <div class="flex flex-col items-start">
+                <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 3</a>
+                <a href="" class="font-semibold text-2xl mt-3 relative group">
+                  <span>In Vogue</span>
+                  <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+                </a>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+            <div class="cursor-pointer group relative flex">
+              <img src="./assets/ella-home-4.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+              <div class="absolute top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+              <span class="absolute top-2 right-2 bg-[#0067f0] text-white font-normal text-[15px] py-1 px-3 rounded-lg">New</span>
+              <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="flex flex-row px-10 py-7 justify-between items-center">
+              <div class="flex flex-col items-start">
+                <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 4</a>
+                <a href="" class="font-semibold text-2xl mt-3 relative group">
+                  <span>High Fashion</span>
+                  <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+                </a>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+            <div class="cursor-pointer group relative flex">
+              <img src="./assets/ella-home-5.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+              <div class="absolute top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+              <span class="absolute top-2 right-2 bg-[#0067f0] text-white font-normal text-[15px] py-1 px-3 rounded-lg">New</span>
+              <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="flex flex-row px-10 py-7 justify-between items-center">
+              <div class="flex flex-col items-start">
+                <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 5</a>
+                <a href="" class="font-semibold text-2xl mt-3 relative group">
+                  <span>Surfing</span>
+                  <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+                </a>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+            <div class="cursor-pointer group relative flex">
+              <img src="./assets/ella-home-6.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+              <div class="absolute top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+              <span class="absolute top-2 right-2 bg-[#0067f0] text-white font-normal text-[15px] py-1 px-3 rounded-lg">New</span>
+              <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="flex flex-row px-10 py-7 justify-between items-center">
+              <div class="flex flex-col items-start">
+                <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 6</a>
+                <a href="" class="font-semibold text-2xl mt-3 relative group">
+                  <span>SuperMarket</span>
+                  <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+                </a>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+            <div class="cursor-pointer group relative flex">
+              <img src="./assets/ella-home-7.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+              <div class="absolute top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+              <span class="absolute top-2 right-2 bg-[#0067f0] text-white font-normal text-[15px] py-1 px-3 rounded-lg">New</span>
+              <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="flex flex-row px-10 py-7 justify-between items-center">
+              <div class="flex flex-col items-start">
+                <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 7</a>
+                <a href="" class="font-semibold text-2xl mt-3 relative group">
+                  <span>Electornics</span>
+                  <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+                </a>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+            <div class="cursor-pointer group relative flex">
+              <img src="./assets/ella-home-8.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+              <div class="absolute top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+              <span class="absolute top-2 right-2 bg-[#0067f0] text-white font-normal text-[15px] py-1 px-3 rounded-lg">New</span>
+              <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="flex flex-row px-10 py-7 justify-between items-center">
+              <div class="flex flex-col items-start">
+                <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 8</a>
+                <a href="" class="font-semibold text-2xl mt-3 relative group">
+                  <span>Large Catalogs</span>
+                  <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+                </a>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+            <div class="cursor-pointer group relative flex">
+              <img src="./assets/ella-home-8.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+              <div class="absolute top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+              <span class="absolute top-2 right-2 bg-[#0067f0] text-white font-normal text-[15px] py-1 px-3 rounded-lg">New</span>
+              <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div class="flex flex-row px-10 py-7 justify-between items-center">
+              <div class="flex flex-col items-start">
+                <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 8</a>
+                <a href="" class="font-semibold text-2xl mt-3 relative group">
+                  <span>Large Catalogs</span>
+                  <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+                </a>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500 relative">
+              <div class="absolute text-black text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- End Home Pages Section -->
+
+  <!-- Start Gorgeous Child Themes Section -->
+  <section class="flex flex-col mx-auto mt-[70px] px-4">
+    <div class="text-center">
+      <h1 class="text-[50px] font-bold text-[#ff4719]">Gorgeous Child Themes</h1>
+      <p class="text-base md:w-[35%] w-auto mx-auto">06 Child themes are included in Ella package for <span class="font-bold">FREE</span> to use.
+        <span class="font-bold">They are the different themes and work separately</span></p>
+        <p class="text-[15px] font-bold md:w-[50%] w-auto mx-auto mt-7">Note: Child themes have not updated to Online Store 2.0 yet, from now we will include design of Child Themes into Ella 6 and will remove them when we finish in next version of Ella 6</p>
+    </div>
+
+  <!-- Slider main container -->
+  <div class="swiper mt-[50px] lg:max-w-[1400px] w-[100%]">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper mb-[60px] mx-3">
+      <!-- Slides -->
+      <div class="swiper-slide flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+        <div class="cursor-pointer group relative flex">
+          <img src="./assets/ella-home-1.jpg" alt="ella-home" class="w-[100%] max-w-[100%]">
+          <div class="absolute left-0 top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+          <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="flex flex-row px-10 py-7 justify-between items-center">
+          <div class="flex flex-col items-start">
+            <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 1</a>
+            <a href="" class="font-semibold text-2xl mt-3 relative group">
+              <span>Classic</span>
+              <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+            </a>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+        </div>
+      </div>
+      <div class="swiper-slide flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+        <div class="cursor-pointer group relative flex">
+          <img src="./assets/ella-home-2.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+          <div class="absolute left-0 top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+          <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="flex flex-row px-10 py-7 justify-between items-center">
+          <div class="flex flex-col items-start">
+            <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 1</a>
+            <a href="" class="font-semibold text-2xl mt-3 relative group">
+              <span>Classic</span>
+              <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+            </a>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+        </div>
+      </div>
+      <div class="swiper-slide flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+        <div class="cursor-pointer group relative flex">
+          <img src="./assets/ella-home-3.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+          <div class="absolute left-0 top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+          <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="flex flex-row px-10 py-7 justify-between items-center">
+          <div class="flex flex-col items-start">
+            <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 1</a>
+            <a href="" class="font-semibold text-2xl mt-3 relative group">
+              <span>Classic</span>
+              <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+            </a>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+        </div>
+      </div>
+      <div class="swiper-slide flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+        <div class="cursor-pointer group relative flex">
+          <img src="./assets/ella-home-4.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+          <div class="absolute left-0 top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+          <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="flex flex-row px-10 py-7 justify-between items-center">
+          <div class="flex flex-col items-start">
+            <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 1</a>
+            <a href="" class="font-semibold text-2xl mt-3 relative group">
+              <span>Classic</span>
+              <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+            </a>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+        </div>
+      </div>
+      <div class="swiper-slide flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+        <div class="cursor-pointer group relative flex">
+          <img src="./assets/ella-home-5.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+          <div class="absolute left-0 top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+          <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="flex flex-row px-10 py-7 justify-between items-center">
+          <div class="flex flex-col items-start">
+            <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 1</a>
+            <a href="" class="font-semibold text-2xl mt-3 relative group">
+              <span>Classic</span>
+              <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+            </a>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+        </div>
+      </div>
+      <div class="swiper-slide flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+        <div class="cursor-pointer group relative flex">
+          <img src="./assets/ella-home-6.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+          <div class="absolute left-0 top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+          <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="flex flex-row px-10 py-7 justify-between items-center">
+          <div class="flex flex-col items-start">
+            <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 1</a>
+            <a href="" class="font-semibold text-2xl mt-3 relative group">
+              <span>Classic</span>
+              <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+            </a>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+        </div>
+      </div>
+      <div class="swiper-slide flex flex-col shadow-lg rounded-xl overflow-hidden hover:-translate-y-4 transition duration-500">
+        <div class="cursor-pointer group relative flex">
+          <img src="./assets/ella-home-7.jpg" alt="ella-home" class="w-[100%] h-[100%]">
+          <div class="absolute left-0 top-0 bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-70"></div>
+          <div class="absolute opacity-0 text-white text-[70px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:opacity-100 transition-opacity duration-500">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="flex flex-row px-10 py-7 justify-between items-center">
+          <div class="flex flex-col items-start">
+            <a href="#" class="text-[#666] hover:text-[#ff4719] text-[14px]">Homepage > Home 1</a>
+            <a href="" class="font-semibold text-2xl mt-3 relative group">
+              <span>Classic</span>
+              <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#ff4719] transition-all group-hover:w-full"></span>
+            </a>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[#cccccc] hover:text-[#ff4719] text-[30px] transition duration-300 delay-100 cursor-pointer"></i>
+        </div>
+      </div>
+      
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="lg:block hidden">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+  </div>
+  </section>
+  <!-- End Gorgeous Child Themes Section -->
+  <!-- fafafa -->
+
+  <!-- Start Prices Table  -->
+  <section class="bg-[#fafafa] pt-[50px] pb-[80px]">
+    <div class="lg:max-w-[1400px] flex flex-col items-center text-center mx-auto px-4">
+      <a href="" class="mb-10"><img src="./assets/Affiliate.png" alt="affiliate" class="w-[100%]"></a>
+      <h1 class="font-bold md:text-[40px] lg:text-[50px] text-[20px] text-[#ff4719] leading-tight">Save $1000+ with our built-in <br class="md:block hidden"> theme features for Free</h1>
+      <p class="text-black">You don’t need to pay more for additional Apps</p>
+      <table class="table-auto w-[90%] shadow-mine bg-white rounded-lg mt-12 overflow-hidden box">
+        <thead>
+          <tr class="text-[#ff4719] font-semibold p-6">
+            <th class="w-[55%] md:p-5 p-2 border-r-[1px] md:text-[19px] text-[14px] border-b-[1px]">Features</th>
+            <th class="w-[22.5%] md:p-5 p-2 border-r-[1px] md:text-[19px] text-[14px] border-b-[1px]">Shopify App Cost</th>
+            <th class="w-[22.5%] md:p-5 p-2 md:text-[19px] text-[14px] border-b-[1px]">Our Theme</th>
+          </tr>
+        </thead>
+        <tbody class="whitespace-nowrap">
+          <tr>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">Bundles & Discounts</td>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">$180.00</td>
+            <td class="flex items-center justify-center p-5 md:text-[18px] text-[14px] font-light text-[#55595c]"><i class="fa-solid fa-check text-white text-[12px] bg-[#48c33d] p-[3px] rounded-full mr-2"></i> FREE</td>
+          </tr>
+          <tr class="bg-[#f8f8f8]">
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">Advanced Mega Menu</td>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">$120.00</td>
+            <td class="flex items-center justify-center p-5 md:text-[18px] text-[14px] font-light text-[#55595c]"><i class="fa-solid fa-check text-white text-[12px] bg-[#48c33d] p-[3px] rounded-full mr-2"></i> FREE</td>
+          </tr>
+          <tr>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">Product Compare</td>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">$240.00</td>
+            <td class="flex items-center justify-center p-5 md:text-[18px] text-[14px] font-light text-[#55595c]"><i class="fa-solid fa-check text-white text-[12px] bg-[#48c33d] p-[3px] rounded-full mr-2"></i> FREE</td>
+          </tr>
+          <tr class="bg-[#f8f8f8]">
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">Free shipping threshold</td>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">$60.00</td>
+            <td class="flex items-center justify-center p-5 md:text-[18px] text-[14px] font-light text-[#55595c]"><i class="fa-solid fa-check text-white text-[12px] bg-[#48c33d] p-[3px] rounded-full mr-2"></i> FREE</td>
+          </tr>
+          <tr>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">Countdown Timer</td>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">$84.00</td>
+            <td class="flex items-center justify-center p-5 md:text-[18px] text-[14px] font-light text-[#55595c]"><i class="fa-solid fa-check text-white text-[12px] bg-[#48c33d] p-[3px] rounded-full mr-2"></i> FREE</td>
+          </tr>
+          <tr class="bg-[#f8f8f8]">
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">Quick Shop</td>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">$78.00</td>
+            <td class="flex items-center justify-center p-5 md:text-[18px] text-[14px] font-light text-[#55595c]"><i class="fa-solid fa-check text-white text-[12px] bg-[#48c33d] p-[3px] rounded-full mr-2"></i> FREE</td>
+          </tr>
+          <tr>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">Cart Upsell</td>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">$155.00</td>
+            <td class="flex items-center justify-center p-5 md:text-[18px] text-[14px] font-light text-[#55595c]"><i class="fa-solid fa-check text-white text-[12px] bg-[#48c33d] p-[3px] rounded-full mr-2"></i> FREE</td>
+          </tr>
+          <tr class="bg-[#f8f8f8]">
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">Size Chart</td>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">$69.00</td>
+            <td class="flex items-center justify-center p-5 md:text-[18px] text-[14px] font-light text-[#55595c]"><i class="fa-solid fa-check text-white text-[12px] bg-[#48c33d] p-[3px] rounded-full mr-2"></i> FREE</td>
+          </tr>
+          <tr>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">Wish Lists</td>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">$96.00</td>
+            <td class="flex items-center justify-center p-5 md:text-[18px] text-[14px] font-light text-[#55595c]"><i class="fa-solid fa-check text-white text-[12px] bg-[#48c33d] p-[3px] rounded-full mr-2"></i> FREE</td>
+          </tr>
+          <tr class="bg-[#f8f8f8]">
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">LookBook</td>
+            <td class="p-5 border-r-[1px] md:text-[18px] text-[14px] font-light text-[#55595c]">$290.00</td>
+            <td class="flex items-center justify-center p-5 md:text-[18px] text-[14px] font-light text-[#55595c]"><i class="fa-solid fa-check text-white text-[12px] bg-[#48c33d] p-[3px] rounded-full mr-2"></i> FREE</td>
+          </tr>
+        </tbody>
+        <tfoot class="border-t-[1px]">
+          <tr class="">
+            <td class="text-[#ff4719] md:text-[30px] text-[20px] p-10 border-r-[1px] font-semibold leading-tight"><span class="underline decoration-1">Plus $1,516.00 </span><br>per year</td>
+            <td colspan="2" class="p-5"><a href="" class="block font-bold text-[25px] text-white bg-gradient-to-r from-[#ff4719] via-[#fd562d] to-[#fa6d4a] py-[35px] px-0 rounded-lg group relative">Only $44* <br><span class="font-normal">No Monthly Fee</span>
+              <div class="absolute top-0 -inset-full hidden h-full w-1/2  transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-40 group-hover:animate-shine group-hover:block"></div>
+            </a>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </section>
+  <!-- End Prices Table  -->
+
+  <!-- Start Section Mobile Design   -->
+  <section class="lg:max-w-[1400px] mx-auto text-center items-center mt-[60px] px-4 pb-11">
+    <h1 class="font-bold md:text-[40px] lg:text-[50px] text-[20px] text-[#ff4719]">Especially, Ella is Mobile First Design</h1>
+    <div class="flex md:flex-row-reverse flex-col justify-center md:mt-10 mt-5">
+      <div class="h-[85vh] md:w-[50%] w-full mt-10 flex">
+        <div class="mx-auto">
+          <img src="./assets/MOBILE-MENU.gif" alt="" class="h-full w-auto object-contain">
+        </div>
+      </div>
+      <div class="flex flex-col gap-5 md:w-[50%] w-full h-[85vh] overflow-y-scroll mt-10 md:px-10 px-5 scrollbar">
+        <div class="p-5 border-2 border-[#ff4719] rounded-lg text-start cursor-pointer">
+          <h1 class="font-bold md:text-2xl text-xl mb-3">Moblie Menu</h1>
+          <p class="font-light w-[95%] md:text-[18px] text-[14px]">The best menu layouts which are optimized well for Mobile, prevents your customers from feeling overwhelmed by a multitude of menu items from the traditional way.</p>
+        </div>
+        <div class="p-5 rounded-lg text-start cursor-pointer transition duration-500 opacity-25 hover:opacity-100 hover:translate-x-3">
+          <h1 class="font-bold md:text-2xl text-xl mb-3">Moblie Menu</h1>
+          <p class="font-light w-[95%] md:text-[18px] text-[14px]">The best menu layouts which are optimized well for Mobile, prevents your customers from feeling overwhelmed by a multitude of menu items from the traditional way.</p>
+        </div>
+        <div class="p-5 rounded-lg text-start cursor-pointer transition duration-500 opacity-25 hover:opacity-100 hover:translate-x-3">
+          <h1 class="font-bold md:text-2xl text-xl mb-3">Moblie Menu</h1>
+          <p class="font-light w-[95%] md:text-[18px] text-[14px]">The best menu layouts which are optimized well for Mobile, prevents your customers from feeling overwhelmed by a multitude of menu items from the traditional way.</p>
+        </div>
+        <div class="p-5 rounded-lg text-start cursor-pointer transition duration-500 opacity-25 hover:opacity-100 hover:translate-x-3">
+          <h1 class="font-bold md:text-2xl text-xl mb-3">Moblie Menu</h1>
+          <p class="font-light w-[95%] md:text-[18px] text-[14px]">The best menu layouts which are optimized well for Mobile, prevents your customers from feeling overwhelmed by a multitude of menu items from the traditional way.</p>
+        </div>
+        <div class="p-5 rounded-lg text-start cursor-pointer transition duration-500 opacity-25 hover:opacity-100 hover:translate-x-3">
+          <h1 class="font-bold md:text-2xl text-xl mb-3">Moblie Menu</h1>
+          <p class="font-light w-[95%] md:text-[18px] text-[14px]">The best menu layouts which are optimized well for Mobile, prevents your customers from feeling overwhelmed by a multitude of menu items from the traditional way.</p>
+        </div>
+        <div class="p-5 rounded-lg text-start cursor-pointer transition duration-500 opacity-25 hover:opacity-100 hover:translate-x-3">
+          <h1 class="font-bold md:text-2xl text-xl mb-3">Moblie Menu</h1>
+          <p class="font-light w-[95%] md:text-[18px] text-[14px]">The best menu layouts which are optimized well for Mobile, prevents your customers from feeling overwhelmed by a multitude of menu items from the traditional way.</p>
+        </div>
+        <div class="p-5 rounded-lg text-start cursor-pointer transition duration-500 opacity-25 hover:opacity-100 hover:translate-x-3">
+          <h1 class="font-bold md:text-2xl text-xl mb-3">Moblie Menu</h1>
+          <p class="font-light w-[95%] md:text-[18px] text-[14px]">The best menu layouts which are optimized well for Mobile, prevents your customers from feeling overwhelmed by a multitude of menu items from the traditional way.</p>
+        </div>
+        <div class="p-5 rounded-lg text-start cursor-pointer transition duration-500 opacity-25 hover:opacity-100 hover:translate-x-3">
+          <h1 class="font-bold md:text-2xl text-xl mb-3">Moblie Menu</h1>
+          <p class="font-light w-[95%] md:text-[18px] text-[14px]">The best menu layouts which are optimized well for Mobile, prevents your customers from feeling overwhelmed by a multitude of menu items from the traditional way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section Mobile Design   -->
+
+  <!-- Start Features Section -->
+  <section class="bg-[#fafafa]">
+    <div class="lg:max-w-[1400px] mx-auto text-center items-center mt-[60px] px-4 pb-11 pt-11">
+      <div class="grid sm:grid-cols-2 grid-cols-1 gap-5">
+        <div class="bg-white rounded-xl overflow-hidden shadow-mine">
+          <img src="./assets/PERFORMANCE.gif" alt="">
+        </div>
+        <div class="min-h-[250px] bg-[#ff4719] rounded-xl flex flex-col justify-center items-center text-white text-center shadow-mine p-5">
+          <h1 class="lg:text-[50px] md:text-[30px] text-[20px] font-bold leading-tight">Super Fast Loading Speed</h1>
+          <span class="font-semibold mt-2 text-[25px]">99% Performance - A Grade</span>
+          <p class="font-light lg:text-lg text-base mt-3">Performance Report by GTMetrix & Google Speed Insight</p>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 grid-cols-1 gap-5 mt-3">
+        <div class="min-h-[250px] bg-[#ff4719] rounded-xl flex flex-col justify-center items-center text-white text-center shadow-mine p-5">
+          <h1 class="lg:text-[50px] md:text-[30px] text-[20px] font-bold leading-tight">Potential Revenue Growth</h1>
+          <p class="font-light lg:text-lg text-base mt-3">Stronger together with our best marketing tools. You will know how finance and marketing should collaborate to maximize profitability demand</p>
+        </div>
+        <div class="bg-white rounded-xl overflow-hidden shadow-mine">
+          <img src="./assets/SEO.gif" alt="">
+        </div>
+      </div>
+      <!-- Powerful SEO With Ella -->
+      <div class="grid grid-cols-2 w-full h-[80vh] bg-white p-5 mt-10 rounded-xl">
+        <div class="flex flex-col h-full">
+            <img src="./assets/google-logo.png" alt="" class="w-[10%] ">
+            <img src="./assets/searching-field.png" alt="" class="w-[75%]">
+            <img class="w-[100%]" src="./assets/active-search-result.png" alt="">
+            <img src="./assets/search-result.png" alt="">
+            <img class="mt-10" src="./assets/search-result-2.png" alt="">
+        </div>
+        <div class="flex flex-col justify-center text-center text-[#ff4719] h-full mx-auto px-10">
+          <h1 class="lg:text-[50px] md:text-[30px] text-[20px] font-bold leading-tight">Powerful SEO With Ella</h1>
+          <span>Online Store 2.0</span>
+          <p class="font-light lg:text-lg text-base mt-3">
+            Doing SEO for your website will help you rank higher in the search engine rankings (SERP) so it will have a chance to show up before people are interested and thereby have a chance to turn them into customers yourself.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Features Section -->
+
+  <!-- Start What our Clients say Section -->
+  <section class="text-center items-center pt-10">
+    <h1 class="font-bold md:text-[40px] lg:text-[50px] text-[20px] text-[#ff4719]">What our Clients say</h1>
+    <p class="font-light mt-1">See what our customers say about us. It’s really matter for us, how good or bad we will make<br> it for evaluation to make Ella better.</p>
+
+      <!-- Slider main container -->
+    <div class="swiper mt-[50px] w-full">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper mb-[60px] p-5">
+        <!-- Slides -->
+        <div class="swiper-slide h-full bg-white shadow-mine p-10 rounded-xl overflow-hidden">
+          <h1 class="font-semibold text-[#ff4719] text-lg text-start">Laaki</h1>
+          <div class="flex flex-row items-center justify-between border-b-[1px] pb-3">
+            <p class="text-sm">for Customer Service</p>
+            <img src="./assets/five-stars.png" alt="" class="w-[100px]">
+          </div>
+          <p class="pt-3 font-light leading-relaxed text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, inventore amet? Delectus nesciunt nulla culpa iure deleniti, nam minima ea minus vel distinctio repellendus exercitationem, facere, iusto fuga at ipsam?</p>
+        </div>
+        <div class="swiper-slide h-full bg-white shadow-mine p-10 rounded-xl overflow-hidden">
+          <h1 class="font-semibold text-[#ff4719] text-lg text-start">Laaki</h1>
+          <div class="flex flex-row items-center justify-between border-b-[1px] pb-3">
+            <p class="text-sm">for Customer Service</p>
+            <img src="./assets/five-stars.png" alt="" class="w-[100px]">
+          </div>
+          <p class="pt-3 font-light leading-relaxed text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, inventore amet? Delectus nesciunt nulla culpa iure deleniti, nam minima ea minus vel distinctio repellendus exercitationem, facere, iusto fuga at ipsam?</p>
+        </div>
+        <div class="swiper-slide h-full bg-white shadow-mine p-10 rounded-xl overflow-hidden">
+          <h1 class="font-semibold text-[#ff4719] text-lg text-start">Laaki</h1>
+          <div class="flex flex-row items-center justify-between border-b-[1px] pb-3">
+            <p class="text-sm">for Customer Service</p>
+            <img src="./assets/five-stars.png" alt="" class="w-[100px]">
+          </div>
+          <p class="pt-3 font-light leading-relaxed text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, inventore amet? Delectus nesciunt nulla culpa iure deleniti, nam minima ea minus vel distinctio repellendus exercitationem, facere, iusto fuga at ipsam?</p>
+        </div>
+        <div class="swiper-slide h-full bg-white shadow-mine p-10 rounded-xl overflow-hidden">
+          <h1 class="font-semibold text-[#ff4719] text-lg text-start">Laaki</h1>
+          <div class="flex flex-row items-center justify-between border-b-[1px] pb-3">
+            <p class="text-sm">for Customer Service</p>
+            <img src="./assets/five-stars.png" alt="" class="w-[100px]">
+          </div>
+          <p class="pt-3 font-light leading-relaxed text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, inventore amet? Delectus nesciunt nulla culpa iure deleniti, nam minima ea minus vel distinctio repellendus exercitationem, facere, iusto fuga at ipsam?</p>
+        </div>
+        <div class="swiper-slide h-full bg-white shadow-mine p-10 rounded-xl overflow-hidden">
+          <h1 class="font-semibold text-[#ff4719] text-lg text-start">Laaki</h1>
+          <div class="flex flex-row items-center justify-between border-b-[1px] pb-3">
+            <p class="text-sm">for Customer Service</p>
+            <img src="./assets/five-stars.png" alt="" class="w-[100px]">
+          </div>
+          <p class="pt-3 font-light leading-relaxed text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, inventore amet? Delectus nesciunt nulla culpa iure deleniti, nam minima ea minus vel distinctio repellendus exercitationem, facere, iusto fuga at ipsam?</p>
+        </div>
+        <div class="swiper-slide h-full bg-white shadow-mine p-10 rounded-xl overflow-hidden">
+          <h1 class="font-semibold text-[#ff4719] text-lg text-start">Laaki</h1>
+          <div class="flex flex-row items-center justify-between border-b-[1px] pb-3">
+            <p class="text-sm">for Customer Service</p>
+            <img src="./assets/five-stars.png" alt="" class="w-[100px]">
+          </div>
+          <p class="pt-3 font-light leading-relaxed text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, inventore amet? Delectus nesciunt nulla culpa iure deleniti, nam minima ea minus vel distinctio repellendus exercitationem, facere, iusto fuga at ipsam?</p>
+        </div>
+        <div class="swiper-slide h-full bg-white shadow-mine p-10 rounded-xl overflow-hidden">
+          <h1 class="font-semibold text-[#ff4719] text-lg text-start">Laaki</h1>
+          <div class="flex flex-row items-center justify-between border-b-[1px] pb-3">
+            <p class="text-sm">for Customer Service</p>
+            <img src="./assets/five-stars.png" alt="" class="w-[100px]">
+          </div>
+          <p class="pt-3 font-light leading-relaxed text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, inventore amet? Delectus nesciunt nulla culpa iure deleniti, nam minima ea minus vel distinctio repellendus exercitationem, facere, iusto fuga at ipsam?</p>
+        </div>
+        <div class="swiper-slide h-full bg-white shadow-mine p-10 rounded-xl overflow-hidden">
+          <h1 class="font-semibold text-[#ff4719] text-lg text-start">Laaki</h1>
+          <div class="flex flex-row items-center justify-between border-b-[1px] pb-3">
+            <p class="text-sm">for Customer Service</p>
+            <img src="./assets/five-stars.png" alt="" class="w-[100px]">
+          </div>
+          <p class="pt-3 font-light leading-relaxed text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, inventore amet? Delectus nesciunt nulla culpa iure deleniti, nam minima ea minus vel distinctio repellendus exercitationem, facere, iusto fuga at ipsam?</p>
+        </div>
+        <div class="swiper-slide h-full bg-white shadow-mine p-10 rounded-xl overflow-hidden">
+          <h1 class="font-semibold text-[#ff4719] text-lg text-start">Laaki</h1>
+          <div class="flex flex-row items-center justify-between border-b-[1px] pb-3">
+            <p class="text-sm">for Customer Service</p>
+            <img src="./assets/five-stars.png" alt="" class="w-[100px]">
+          </div>
+          <p class="pt-3 font-light leading-relaxed text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, inventore amet? Delectus nesciunt nulla culpa iure deleniti, nam minima ea minus vel distinctio repellendus exercitationem, facere, iusto fuga at ipsam?</p>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!-- End What our Clients say Section -->
+  <script src="main.js"></script>
+</body>
+</html>
